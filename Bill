@@ -10,9 +10,9 @@ int main()
     float after_tax = amount_due + tax_amount;
     float tip_amount = after_tax * tip;
     float after_tip = after_tax + tip_amount;
-    printf("cost of meal: %lf\n",amount_due);
+    printf("cost of meal: %f\n",amount_due);
     printf("tax amount: %f\n",tax_amount);
-    printf("tip: %lf\n",tip_amount);
-    printf("total due:%lf\n", after_tip);
+    printf("tip: %f\n",tip_amount);
+    printf("total due:%f\n", after_tip);
     return 0;
 }
