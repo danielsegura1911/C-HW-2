@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+    float riseing = 1.5;
+    float after_5 = riseing * 5;
+    float after_10 = riseing * 10;
+    float after_7 = riseing * 7;
+    printf("After 5 years the ocean will be %f",after_5);
+    printf(" millimiters \n");
+    printf("After 7 years the ocean will be %f",after_7);
+    printf(" millimiters \n");
+    printf("After 10 years the ocean will be %f",after_10);
+    printf(" millimiters \n");
+
+   return 0;
+}
