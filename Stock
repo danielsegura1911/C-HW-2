@@ -1,0 +1,26 @@
+
+#include <stdio.h>
+
+int main()
+{
+  int shares = 1000;
+  float buying_price = 45.5;
+  float selling_price = 56.9;
+  float commission = .02;
+  float bought = buying_price * shares;
+  float commission_buy = bought * commission;
+  float loss = bought + commission_buy;
+  float sold = selling_price * shares;
+  float comission_sell = sold * commission;
+  float gain = sold - comission_sell;
+  float profit = gain - loss;
+  printf("Joe bought 1000 shares at $45.50 per share for a total of $%f\n", bought);
+  printf("Joe paid his stock broker 2 percent commission of  $%f\n", commission_buy);
+  printf("In total Joe paid a total of $%f\n", loss);
+  printf("Joe sold 1000 shares at $56.90 per share for a total of $%f\n", sold);
+  printf("Joe paid his stock broker 2 percent commission of $%f\n", comission_sell);
+  printf("In total Joe recieved $%f\n", gain);
+  printf("Joes profit is a total of $%f\n", profit);
+  
+  return 0;
+}
