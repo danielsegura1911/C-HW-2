@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+
+int main()
+{
+    float amount_due = 88.67;
+    float tax= 0.0675;
+    float tip = .2;
+    float tax_amount = amount_due * tax;
+    float after_tax = amount_due + tax_amount;
+    float tip_amount = after_tax * tip;
+    float after_tip = after_tax + tip_amount;
+    printf("cost of meal: %lf\n",amount_due);
+    printf("tax amount: %f\n",tax_amount);
+    printf("tip: %lf\n",tip_amount);
+    printf("total due:%lf\n", after_tip);
+    return 0;
+}
